@@ -1,0 +1,12 @@
+
+#cancel.button,
+#resend.button {
+    display: inline-block;
+}
+
+.ibx #resendTimer {
+    display: none;
+    color: #eee;
+    margin: 0 auto;
+    padding: 10px 15px;
+}

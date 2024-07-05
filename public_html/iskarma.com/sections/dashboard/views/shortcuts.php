@@ -1,0 +1,1 @@
+this is the shortcuts area that can display custom shortcuts on this page!

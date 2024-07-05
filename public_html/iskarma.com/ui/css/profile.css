@@ -1,0 +1,40 @@
+.profile-top {
+	display: grid;
+	grid-template-columns: 200px calc(100% - 230px);
+	grid-column-gap: 30px;
+	margin-bottom: 30px;
+}
+
+.profile-top .right {
+	display: grid;
+	grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+	grid-column-gap: 30px;
+	grid-template-rows: auto auto;
+}
+
+.profile-top .right .ii {
+	display: block;
+	width: auto;
+	margin: 30px auto 0;
+}
+
+.profile-bottom {
+	display: grid;
+	grid-template-columns: 49.5% 49.5%;
+	grid-template-rows: auto auto;
+	grid-column-gap: 1%;
+	margin-top: 30px;
+}
+
+.profile-mid {
+	display: grid;
+	grid-template-columns: 49.5% 49.5%;
+	grid-template-rows: auto auto;
+	grid-column-gap: 1%;
+
+}
+
+.profile-mid .ii {
+	display: block;
+}
+

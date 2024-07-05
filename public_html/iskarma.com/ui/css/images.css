@@ -1,0 +1,68 @@
+.canvasWrap {
+	background-color: #ffffff5a;
+	border-radius: 0 10px 10px;
+	position: fixed;
+	margin: 50px;
+	top: 0;
+	left: 0;
+	width: calc(100% - 100px);
+	height: calc(100% - 100px);
+	box-shadow: 0 0 100px teal, 0 0 50px green;
+}
+
+.canvas {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0 0 130px #0000005a;
+	border-radius: 0 10px 10px;
+	border: 2px dashed #0000002a;
+}
+
+#selectionBox {
+	position: absolute;
+	border: 1px dashed #000;
+	width:200px;
+	height: 200px;
+
+}
+
+.canvas img {
+	position: relative;
+	max-height: 400px;
+	width: auto;
+	z-index: 1;
+}
+
+.controls {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 0 10px 10px;
+	padding: 10px;
+	background-color: #ffffff5a;
+}
+
+.slider {
+	width: 80%;
+	background-color: blue;
+	border-radius: 10px;
+	display: block;
+	margin: 10px auto;
+}
+
+.cropSelection {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px dashed #fff;
+	border-radius: 0 20px 20px;
+	max-width: auto;
+	max-height: 90%;
+	box-shadow: 0 0 100px #000;
+	z-index: 2;
+}

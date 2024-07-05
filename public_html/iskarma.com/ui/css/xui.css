@@ -1,0 +1,378 @@
+/* INPUT BOX */
+.ibx {
+    position: relative;
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.ibx * {
+    transition: all 1s ease-in-out;
+}
+
+.ibx.info {
+    border-radius: 0 10px 10px;
+    overflow: hidden;
+    background-color: #ffffff11;
+}
+
+
+.ibx.info title {
+    padding: 0 10px;
+    color: #ffff00;
+    display: block;
+    font-size: 14px;
+    line-height: 35px;
+    box-shadow: 0 0 50px #0000001f;
+}
+
+.ibx.info note {
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    color: #ffffff99;
+}
+
+.ibx.info note .ibx {
+    margin: 0px;
+}
+
+.ibx.info note .top {}
+
+.ibx.info note .bottom {
+    background: linear-gradient(90deg, transparent 10%, #ffffff2f 100%);
+    height: 0;
+    opacity: 0;
+    margin-top: 10px;
+    border-radius: 0 10px 10px;
+}
+
+.ibx.info note .bottom.active {
+    padding: 12px 10px;
+    opacity: 1;
+    height: auto;
+}
+
+.ibx label {
+    position: absolute;
+    left: 3px;
+    top: -15px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #ddd;
+    z-index: 0;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+
+.ibx::before {
+    position: absolute;
+    left: 2px;
+    font-size: 20px;
+    color: #ddd;
+    line-height: 40px;
+    top: 2px;
+    width: 40px;
+    background: #07a555;
+    border-radius: 0 8px;
+}
+
+.ibx input,
+.ibx status {
+    color: #ddd;
+    display: block;
+    width: calc(100% - 69px);
+    border: 2px solid #ffffff1a;
+    border-radius: 0px 10px 10px;
+    background: #ffffff14;
+    margin: 0 auto;
+    padding: 0 10px 0 55px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.ibx.status {}
+
+.ibx status {
+    display: none;
+}
+
+.ibx status.active {
+    display: block;
+}
+
+.ibx status::before {
+    float: right;
+}
+
+.ibx status span {
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+.ibx input#otp {
+    letter-spacing: 20px;
+}
+
+.ibx::before {
+    position: absolute;
+    left: 2px;
+    font-size: 20px;
+    line-height: 40px;
+    top: 2px;
+    text-align: center;
+    color: #ff0;
+}
+
+.ibx input:hover {
+    border-color: rgb(255 255 255 / 50%);
+    transition: all 0.4s linear;
+}
+
+
+.ibxg {
+    position: relative;
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.ibxg.grid-b {
+    display: grid;
+    grid-template-columns: 50% 49%;
+    grid-column-gap: 1%;
+}
+
+.ibxg.grid-b .icon-btn {
+    width: 96%;
+    display: grid;
+    grid-template-columns: 40px calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.icon-btn a {
+    text-align: center;
+}
+
+input::placeholder,
+textarea::placeholder {
+    letter-spacing: 0px;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 0px;
+}
+
+.ibx input.valid {}
+
+.ibx input:invalid {
+    border-color: red;
+}
+
+.ibx input:hover {}
+
+.ibx input:focus {
+    border-color: #ffff00;
+    box-shadow: 0 0 20px rgba(255, 216, 7, 0.4);
+}
+
+.ibx .dialCode {
+    position: absolute;
+    left: 42px;
+    line-height: 40px;
+    background: #07a555;
+    border-radius: 10px 0;
+    top: 2px;
+    width: 45px;
+    text-align: right;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.ibx input.mobile {
+    padding-left: 105px;
+    width: calc(100% - 119px);
+    text-indent: 10px;
+}
+
+.ibx.date,
+.ibx.name {
+    display: inline-block;
+    width: auto;
+    margin: 20px 1px 0px;
+}
+
+.ibx.date input,
+.ibx.name input {
+    padding: 0 10px
+}
+
+input.month {
+    width: 60px;
+}
+
+input.day {
+    width: 60px;
+}
+
+input.year {
+    width: 90px;
+}
+
+input.firstname,
+input.lastname {
+    width: calc(100% - 25px);
+}
+
+.grid-select {
+    color: #ddd;
+    display: block;
+    border: 2px solid #ffffff1a;
+    border-radius: 0px 10px 10px;
+    background: #ffffff14;
+    display: grid;
+    overflow: hidden;
+}
+
+.grid-select.twin {
+    grid-template-columns: 50% 50%;
+}
+
+.grid-select.tri {
+    grid-template-columns: 33% 34% 33%;
+}
+
+.grid-select:hover input,
+.grid-select:focus input {
+    border-color: #ffff00;
+}
+
+.grid-select .btn {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.grid-select .btn:focus,
+.grid-select .btn:hover,
+.grid-select .btn:focus a,
+.grid-select .btn:hover a {
+    background-color: rgba(200, 200, 0, 0.5);
+    color: green;
+}
+
+.grid-select .btn.selected,
+.grid-select .btn.selected a,
+.grid-select .btn.selected span::before {
+    background-color: rgba(200, 200, 0, 0.8) !important;
+    color: green;
+}
+
+.grid-select .btn span::before {
+    position: absolute;
+    left: 0px;
+    line-height: 40px;
+    width: 40px;
+}
+
+.grid-select .btn a {
+    display: block;
+    padding-left: 20px;
+}
+
+
+/* BUTTONS */
+/* button wrapper */
+.bbx {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* rounded button */
+.button {
+    margin: 15px 5px;
+    border: 2px solid rgb(255 255 255 / 10%);
+    position: relative;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button:active {
+    background: #ffff00ab
+}
+
+.button:hover {
+    border-color: rgb(255 255 255 / 50%);
+    transition: all 1s ease;
+    cursor: pointer;
+    color: #ffff00;
+}
+
+.button:focus {
+    background: #ffff007a;
+    color: #1E6011
+}
+
+/* styled icon button */
+.icon-btn {
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 0px 10px 10px;
+    height: 40px;
+    background: #ffffff1a;
+    border: 2px solid rgb(255 255 255 / 20%);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.icon-btn:hover,
+.icon-btn:focus {
+    box-shadow: 0 0 50px #08765A;
+    border-color: #ffff00;
+    background: linear-gradient(25deg, rgba(0, 127, 0, 0.8) 20%, rgba(0, 170, 153, 0.7) 100%);
+}
+
+.icon-btn:hover * {
+    color: #ffff00;
+}
+
+.icon-btn span {
+    display: inline-block;
+    vertical-align: top;
+    background: rgb(255 255 255 / 10%)
+}
+
+.icon-btn span::before {
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 0 2px #777;
+}
+
+.icon-btn a {
+    display: inline-block;
+    padding: 0 10px !important;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
+
+.tabs.topbar {}
+
+/* general ui features */
